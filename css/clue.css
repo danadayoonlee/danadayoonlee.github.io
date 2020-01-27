@@ -1,0 +1,12 @@
+.clue-main-img {
+    display: block;
+}
+.clue-prototype {
+    padding-bottom: 5%;
+    background-color: #eee;
+    text-align: center;
+}
+
+.clue-prototype img {
+    width: 25%;
+}
