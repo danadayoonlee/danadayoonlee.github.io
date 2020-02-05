@@ -1,0 +1,128 @@
+/* Presetting */
+.contact-icons {
+	display: none;
+}
+
+/* Main content */
+.about-content {
+  position: relative;
+  top: 30%;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+.about-txt {
+    margin: 0 auto;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 3.5rem;
+    color: #ddd;
+    opacity: 0;
+}
+
+b {
+    color: #303030;
+    background-color: #c5a977;
+}
+
+.about-contact-icons {
+	position: relative;
+	right: 0;
+  bottom: 0;
+  padding: 5% 0 10% 0;
+  text-align: left;
+	list-style-type: none;
+  font-family: 'FontAwesome';
+  font-size: 1.1rem;
+  opacity: 0;
+}
+
+.about-contact-icons li {
+	display: inline;
+}
+
+.about-contact-icons a {
+	margin-right: 20px;
+  color: #c9beac;
+}
+
+/* Text underline effect */
+.highlight {
+    display: inline-block;
+    transition: color 250ms, text-shadow 250ms;
+    position: relative;
+    color: #ddd;
+    z-index: 0;
+}
+.highlight::after {
+    position: absolute;
+    z-index: -1;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #c5a977;
+    transition: all 250ms;
+}
+.highlight:hover {
+    color: #303030;
+    font-weight: 600;
+}
+.highlight:hover::after {
+    height: 75%;
+    width: 105%;
+}
+
+/* RWD */
+/* HD Desktop ~ mobile */
+@media (min-width: 1800px) {
+	@media (min-height: 1000px) {
+        .about-txt {
+            font-size: 1.6rem;
+            line-height: 5rem;
+        }
+        .about-contact-icons {
+          font-size: 1.4rem;
+        }
+        .about-contact-icons a {
+          margin-right: 25px;
+        }
+        .highlight::after {
+          bottom: 10px;
+        }
+	}
+}
+@media (max-width: 1024px) {
+  .about-content {
+    top: 25%;
+  }
+}
+@media (max-width: 800px) {
+  .about-contact-icons {
+    padding: 10% 0 15% 0;
+    opacity: 1;
+  }
+}
+@media (max-width: 550px) {
+  .about-content {
+    top: 30%;
+  }
+  .about-contact-icons {
+    padding: 15% 0 20% 0;
+    opacity: 1;
+  }
+  .m-margin {
+    margin-bottom: 40px;
+  }
+}
+
+/* Mobile landscape */
+@media (max-height: 450px) {
+	.about-content {
+    top: 60%;
+  }
+}
