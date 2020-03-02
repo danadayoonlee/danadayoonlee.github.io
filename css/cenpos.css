@@ -1,0 +1,11 @@
+.cenpos-main-img {
+    display: block;
+}
+.cenpos-prototype {
+    background-color: #eee;
+    text-align: center;
+}
+
+.cenpos-prototype img {
+    width: 25%;
+}
