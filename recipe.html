@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157158291-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-157158291-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Recipe &ndash; Dayoon Lee</title>
+    <meta name="description" content="Web designer portfolio site">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Web,UI,UX,Designer,Frontend,Developer,Portfolio,Toronto,Canada">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/font.css">
+    <link rel="stylesheet" type="text/css" href="./css/shapers.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body class="recipe sub-page">
+    <nav class="navbar clearfix">
+        <svg viewBox="0 0 150 150">
+            <a class="logo" href="index.html">
+                <path id="curve" fill="transparent"
+                    d="M 75 75 m -50, 0 a 50, 50 0 1, 1 100, 0 a 50, 50 0 1, 1 -100, 0" />
+                <text>
+                    <textPath xlink:href="#curve">
+                        · DAYOON · LEE· WEB · PORTFOLIO
+                    </textPath>
+                </text>
+            </a>
+        </svg>
+        <a class="nav-toggle" href="javascript:void(0)"><span class="nav-icon"></span></a>
+        <div class="overlay">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <div class="desktop-nav-hvr"></div>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div class="main-title">Recipe</div>
+        <div class="sub-title">C#, ASP.NET, Azure</div>
+        <div class="button-container">
+            <!--<a href="https://dayoonlee.azurewebsites.net" target="_blank" class="button">Demo</a>-->
+            <a href="https://github.com/danadayoonlee/recipe" target="_blank" class="button">Source code</a>
+        </div>
+        <hr class="divider">
+        <h3>01.</h3>
+        <h1>About project</h1>
+        <br />
+        <div class="par">
+            This is a recipe website that users can add or see recipes.<br />
+            Admins who are logged in have more access to manage recipes using CRUD operations.<br /><br />
+            - Database (Microsoft SQL Server) is connected to store information<br />
+            - Deployed a website using Azure (Currently unavailable to view)
+        </div>
+        <br />
+        <h3>02.</h3>
+        <h1>Demo</h1>
+        <br />
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/recipe_1.PNG" alt="recipe demo img 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/recipe_2.PNG" alt="recipe demo img 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/recipe_3.PNG" alt="recipe demo img 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/recipe_4.PNG" alt="recipe demo img 4">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/recipe_5.PNG" alt="recipe demo img 5">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/recipe_6.PNG" alt="recipe demo img 6">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/recipe_7.PNG" alt="recipe demo img 7">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/recipe_8.PNG" alt="recipe demo img 8">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <ul class="contact-icons">
+        <li><a class="mail-icon icon-hvr-bob" href="mailto:danadayoonlee@gmail.com" target="_blank"><i
+                    class="fa fa-envelope hvr-icon"></i></a></li>
+        <li><a class="github-icon icon-hvr-bob" href="https://github.com/danadayoonlee" target="_blank"><i
+                    class="fa fa-github hvr-icon"></i></a></li>
+        <!--
+            <li><a class="icon-hvr-bob" href="https://www.behance.net/" target="_blank"><i class="fa fa-behance hvr-icon"></i></a></li>
+            <li class="icon-hvr-rotate"><a href="https://dribbble.com" target="_blank"><i class="fa fa-dribbble"></i></a></li class="icon-hvr-rotate">
+            -->
+    </ul>
+    <a class="back-to-top"></a>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
