@@ -104,7 +104,7 @@ a {
 /* RWD */
 @media (max-width: 550px) {
   .main-title {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 4rem;
     /* font-weight: 700; */
     color: #ddd;
