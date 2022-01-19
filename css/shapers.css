@@ -1,0 +1,155 @@
+/* Presetting */
+svg {
+  opacity: 1;
+}
+
+.nav {
+  opacity: 1;
+}
+
+.contact-icons {
+  display: none;
+}
+
+/* Main content */
+body {
+  background-color: #eee;
+}
+
+a {
+  color: #ddd;
+}
+
+.main-container {
+  position: relative;
+  top: 25%;
+  margin: 0 auto;
+  padding-bottom: 10%;
+  width: 90%;
+  color: #ddd;
+}
+
+.main-title {
+  font-size: 4rem;
+  line-height: 8rem;
+  /* font-weight: 700; */
+}
+
+.sub-title,
+.par {
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  /* font-weight: 500; */
+  line-height: 2rem;
+}
+
+.main-container img {
+  width: 100%;
+}
+
+/* button */
+.button {
+  display: inline-block;
+  margin: 0 1rem 3rem 0;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #BEAF96;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:hover:before {
+  width: 100%;
+}
+
+.divider {
+  margin: 0 0 40px 0;
+  background-color: #fff;
+}
+
+/* RWD */
+@media (max-width: 550px) {
+  .main-title {
+    font-size: 2rem;
+    line-height: 4rem;
+    /* font-weight: 700; */
+    color: #ddd;
+  }
+
+  .sub-title,
+  .par {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    /* font-weight: 500; */
+    color: #ddd;
+  }
+
+  .carousel {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1024px) and (min-height: 1360px) {
+  .main-container {
+    top: 15%;
+  }
+}
+
+.carousel {
+  width: 80%;
+}
+
+.carousel .carousel-indicators li {
+  background-color: #ccc;
+}
+
+.carousel .carousel-indicators li.active {
+  background-color: #000;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 10% !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../images/angle-right-solid.svg) !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../images/angle-left-solid.svg) !important;
+}
